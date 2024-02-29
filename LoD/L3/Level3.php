@@ -172,7 +172,7 @@
                         <!-- INTEGRATE FARMC -->
                         <ul class="treeview-menu">
                             <li class="treeview">
-                                <a class="waves-effect waves-dark" href="#!">
+                            <a class="waves-effect waves-dark" href="../BFAR_FARMC/FARMC_MembersProfile_Form/member_info.php">
                                     <i class="icon-arrow-right"></i>
                                     <span>1.2 FARMC Membership</span>
                                     <i class="icon-arrow-down"></i>

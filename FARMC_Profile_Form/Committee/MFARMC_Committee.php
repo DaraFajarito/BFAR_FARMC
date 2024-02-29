@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Quantum Able Bootstrap 4 Admin Dashboard Template</title>
+    <title>BFAR_FARMC</title>
     <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -199,7 +199,7 @@
                         <!-- INTEGRATE FARMC -->
                         <ul class="treeview-menu">
                             <li class="treeview">
-                                <a class="waves-effect waves-dark" href="../BFAR_FARMC/FARMC_MembersProfile_Form/memberform.php">
+                                <a class="waves-effect waves-dark" href="../BFAR_FARMC/FARMC_MembersProfile_Form/member_info.php">
                                     <i class="icon-arrow-right"></i>
                                     <span>1.2 FARMC Membership</span>
                                     <i class="icon-arrow-down"></i>
