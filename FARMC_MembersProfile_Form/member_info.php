@@ -681,10 +681,10 @@
                                                         </div>
                                                     </div>
                                                     <div class="text-right">
-                                                    <a href="../../../BFAR_FARMC/FARMC_MembersProfile_Form/Membership/FARMC_Membership.php" class="btn btn-primary">Next<i class="icon-arrow-right"></i></a>
+                                                        <a href="../../BFAR_FARMC/FARMC_MembersProfile_Form/FARMC_Membership.php" class="btn btn-primary">Next<i class="icon-arrow-right"></i></a>
+                                                    </div>
                                                 </div>
-                                                </div>
-                                                
+
                                             </div>
                                         </div>
                                     </div>
