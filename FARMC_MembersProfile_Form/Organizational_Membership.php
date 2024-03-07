@@ -330,7 +330,7 @@
                                                     <hr>
                                                     <!-- <div class="card-block"> -->
                                                     <div class="row">
-                                                        <div class="col-md-3">
+                                                        <div class="col-md-4    ">
                                                             <div class="grid-material bg-general"><em>Composition of Membership</em></div>
                                                             <form>
                                                                 <div class="form-radio">
@@ -355,7 +355,7 @@
                                                                 </div>
                                                             </form>
                                                         </div>
-                                                        <div class="col-md-3">
+                                                        <div class="col-md-4">
                                                             <div class="grid-material bg-general"><em>Registration of Association</em></div>
                                                             <form>
                                                                 <div class="form-radio">
@@ -372,39 +372,40 @@
                                                             </form>
                                                         </div>
 
-                                                        <div class="col-md-3">
-                                                            <div class="col-sm-12 col-xs-12 waves-effect waves-light">
-                                                                <div class="grid-material bg-general">Birthdate</div>
-
-                                                                <form>
-                                                                    <div class="form-group">
-                                                                        <label for="inline3mail" class="block form-control-label">Date</label>
-                                                                        <input id="inline3mail" type="email" class="form-control" placeholder="Date">
-                                                                    </div>
-                                                                    <div class="form-group">
-                                                                        <label for="inline3mail" class="block form-control-label">Ages</label>
-                                                                        <input id="inline3mail" type="email" class="form-control" placeholder="Ages">
-                                                                    </div>
-                                                                </form </div>
+                                                        <!-- <div class="radio-container">
+                                                            <em>Set 1:</em>
+                                                            <div class="form-group" style="width: 200px;">
+                                                                <label for="option1_textbox1" class="block form-control-label">Option 1</label>
+                                                                <input id="option1_textbox1" type="text" class="form-control" placeholder="Option 1">
                                                             </div>
-                                                        </div>
-
-
-                                                        <div class="col-md-3">
-                                                            <div class="col-sm-12 col-xs-12 waves-effect waves-light">
-                                                                <div class="grid-material bg-general">Birthplace</div>
-
-                                                                <form>
-                                                                    <div class="form-group">
-                                                                        <label for="inline3mail" class="block form-control-label">City/Municipality</label>
-                                                                        <input id="inline3mail" type="email" class="form-control" placeholder="Date">
-                                                                    </div>
-                                                                    <div class="form-group">
-                                                                        <label for="inline3mail" class="block form-control-label">Province</label>
-                                                                        <input id="inline3mail" type="email" class="form-control" placeholder="Ages">
-                                                                    </div>
-                                                                </form </div>
+                                                            <div class="form-group" style="width: 200px;">
+                                                                <label for="option1_textbox2" class="block form-control-label">Option 2</label>
+                                                                <input id="option1_textbox2" type="text" class="form-control" placeholder="Option 2">
                                                             </div>
+                                                        </div> -->
+
+                                                        <div class="col-md-4">
+                                                            <div class="grid-material bg-general"><em>Registration of Association</em></div>
+                                                            <form>
+                                                                <div class="radio-container">
+                                                                    <div class="form-group">
+                                                                        <input type="radio" class="form-check-input" name="option" value="yes" id="yes_radio">
+                                                                        <label class="form-check-label" for="yes_radio">Yes</label>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <input type="radio" class="form-check-input" name="option" value="no" id="no_radio">
+                                                                        <label class="form-check-label" for="no_radio">No</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="reg_no">Reg. No.</label>
+                                                                    <input id="reg_no" type="text" class="form-control" placeholder="Reg. No.">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="date">Date</label>
+                                                                    <input id="date" type="text" class="form-control" placeholder="Date">
+                                                                </div>
+                                                            </form>
                                                         </div>
                                                     </div>
 
@@ -497,27 +498,7 @@
                                                         </div>
                                                     </div>
                                                     <hr>
-                                                    <div class="row">
-                                                        <div class="col-md-8">
-                                                            <form class="form-inline">
-                                                                <div class="form-group m-r-15">
-                                                                    <label for="inline3mail" class="block form-control-label">Name Spouse<em>(Family, Given, Middle)</em></label>
-                                                                    <input id="inline3mail" type="email" class="form-control" style="width: 650px;" placeholder="Enter name">
-                                                                </div>
-                                                            </form>
-                                                        </div>
 
-                                                        <div class="col-md-4">
-                                                            <div class="col-sm-12 col-xs-12 waves-effect waves-light">
-                                                                <form>
-                                                                    <div class="form-group">
-                                                                        <label for="inline3mail" class="block form-control-label">Occupation</label>
-                                                                        <input id="inline3mail" type="email" class="form-control" placeholder="Date">
-                                                                    </div>
-                                                                </form>
-                                                            </div>
-                                                        </div>
-                                                    </div>
                                                     <hr>
 
                                                     <div class="row">
