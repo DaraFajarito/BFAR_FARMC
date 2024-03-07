@@ -426,7 +426,7 @@
                                                                 <div class="form-radio">
                                                                     <div class="radio radio-inline">
                                                                         <label>
-                                                                            <input type="radio" name="radio" onclick="toggleTextBox('')" /> <i class="helper"></i> Fisherfolk/Fisherworker
+                                                                            <input type="radio" name="radio" onclick="toggleTextBox('')" /> <i class="helper"></i> Fisherfolk/Fishworker
                                                                         </label>
                                                                         <label>
                                                                             <input type="radio" name="radio" onclick="toggleTextBox('')" /> <i class="helper"></i> Commercial Operator
@@ -499,15 +499,15 @@
 
                                                     <div class="row">
                                                         <div class="col-md-3">
-                                                            <div class="grid-material bg-general"><em>Sector Represented</em></div>
+                                                            <div class="grid-material bg-general"><em>LGU Representative, specify the office</em></div>
                                                             <form>
                                                                 <div class="form-radio">
                                                                     <div class="radio radio-inline">
                                                                         <label>
-                                                                            <input type="radio" name="radio" onclick="toggleTextBox('')" /> <i class="helper"></i> Fisherfolk/Fisherworker
+                                                                            <input type="radio" name="radio" onclick="toggleTextBox('')" /> <i class="helper"></i> SB, Committee on Fisheries
                                                                         </label>
                                                                         <label>
-                                                                            <input type="radio" name="radio" onclick="toggleTextBox('')" /> <i class="helper"></i> Commercial Operator
+                                                                            <input type="radio" name="radio" onclick="toggleTextBox('')" /> <i class="helper"></i> Municipal/City Planning Office
                                                                         </label>
                                                                     </div>
                                                                 </div>
@@ -521,27 +521,10 @@
                                                                 <div class="form-radio">
                                                                     <div class="radio radio-inline">
                                                                         <label>
-                                                                            <input type="radio" name="radio" onclick="toggleTextBox('')" /> <i class="helper"></i> Women Sector
+                                                                            <input type="radio" name="radio" onclick="toggleTextBox('')" /> <i class="helper"></i> Municipal/City Dev't. Council
                                                                         </label>
                                                                         <label>
-                                                                            <input type="radio" name="radio" onclick="toggleTextBox('')" /> <i class="helper"></i> Youth Sector
-                                                                        </label>
-                                                                    </div>
-                                                                </div>
-                                                            </form>
-                                                        </div>
-
-
-                                                        <div class="col-md-3">
-                                                            <div class="grid-material bg-general"><em></em></div>
-                                                            <form>
-                                                                <div class="form-radio">
-                                                                    <div class="radio radio-inline">
-                                                                        <label>
-                                                                            <input type="radio" name="radio" onclick="toggleTextBox('')" /> <i class="helper"></i> Private Sector
-                                                                        </label>
-                                                                        <label>
-                                                                            <input type="radio" name="radio" onclick="toggleTextBox('')" /> <i class="helper"></i> NGO Representative
+                                                                            <input type="radio" name="radio" onclick="toggleTextBox('')" /> <i class="helper"></i> Municipal/City Agriculture Office
                                                                         </label>
                                                                     </div>
                                                                 </div>
@@ -549,178 +532,23 @@
                                                         </div>
 
                                                         <div class="col-md-3">
-                                                            <div class="col-sm-12 col-xs-12 waves-effect waves-light">
-                                                                <div class="grid-material bg-general"><em></em></div>
-                                                                <form class="form-inline">
-                                                                    <div class="form-check">
-                                                                        <label for="ccRadio" class="form-check-label">
-                                                                            <input type="radio" class="form-check-input" name="ccRadios" id="ccRadio" value="cc" onchange="toggleTextBox('ccRadio');">
-                                                                            Cultural Community (IP's)
-                                                                        </label>
-                                                                    </div>
-                                                                    <br>
-                                                                    <div class="form-check">
-                                                                        <label for="OtherRadio" class="form-check-label">
-                                                                            <input type="radio" class="form-check-input" name="ccRadios" id="OtherRadio" value="Other" onchange="toggleTextBox('OtherRadio');">
-                                                                            Other, Please Specify
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-group" id="textBoxGroup" style="display: none;">
-                                                                        <label for="inline3mail" class="block form-control-label"></label>
-                                                                        <input id="inline3mail" type="email" class="form-control" placeholder="">
-                                                                    </div>
-                                                                </form>
+                                                            <div class="form-check">
+                                                                <label for="OtherOfficeRadio" class="form-check-label">
+                                                                    <input type="radio" class="form-check-input" name="ooRadios" id="OtherOfficeRadio" value="OtherOffice" onchange="toggleTextBox('OtherOfficeRadio');">
+                                                                    Other, Please Specify
+                                                                </label>
                                                             </div>
+                                                            <div class="form-group" id="textBoxGroup" style="display: none;">
+                                                                <label for="inline3mail" class="block form-control-label"></label>
+                                                                <input id="inline3mail" type="email" class="form-control" placeholder="">
+                                                            </div>
+                                                            </form>
                                                         </div>
                                                     </div>
+                                                </div>
 
-
-                                                    <hr>
-
-                                                    <div class="row">
-                                                        <div class="col-md-4">
-                                                            <div class="form-group m-r-15">
-                                                                <!-- <hr> -->
-                                                                <label for="inline3mail" class="block form-control-label">No. of Dependent/s</em></label>
-                                                                <div class="col-md-3">
-                                                                    <form>
-                                                                        <div class="form-radio">
-                                                                            <div class="radio radio-inline">
-                                                                                <br>
-                                                                                <label>
-                                                                                    <input type="radio" name="radio" /><i class="helper"></i>Male
-                                                                                </label>
-                                                                                <br>
-                                                                                <label>
-                                                                                    <input type="radio" name="radio" /><i class="helper"></i>Female
-                                                                                </label>
-                                                                                <br>
-                                                                                <label>
-                                                                                    <input type="radio" name="radio" /><i class="helper"></i>Others
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                    </form>
-                                                                </div>
-                                                                <div class="col-md-1">
-                                                                    <form>
-                                                                        <div class="form-inline">
-                                                                            <div>
-                                                                                <label>
-                                                                                    <input type="number" class="form-control" placeholder="" style="width:150px">
-                                                                                </label>
-                                                                                <br>
-                                                                                <br>
-                                                                                <label>
-                                                                                    <input type="number" class="form-control" placeholder="" style="width:150px">
-
-                                                                                </label>
-                                                                                <br>
-                                                                                <br>
-                                                                                <label>
-                                                                                    <input type="number" class="form-control" placeholder="" style="width:150px">
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                    </form>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <div class="form-group m-r-15">
-                                                                <label for="inline3mail" class="block form-control-label">Educational Attainment/Level</em></label>
-                                                                <div class="col-md-5">
-                                                                    <form>
-                                                                        <div class="form-radio">
-                                                                            <div class="radio radio-inline">
-                                                                                <br>
-                                                                                <label>
-                                                                                    <input type="radio" name="radio" /><i class="helper"></i>Primary
-                                                                                </label>
-                                                                                <br>
-                                                                                <label>
-                                                                                    <input type="radio" name="radio" /><i class="helper"></i>Secondary
-                                                                                </label>
-                                                                                <br>
-                                                                                <label>
-                                                                                    <input type="radio" name="radio" /><i class="helper"></i>Vocational
-                                                                                </label>
-                                                                                <br>
-                                                                            </div>
-                                                                        </div>
-                                                                    </form>
-                                                                </div>
-                                                                <div class="col-md-3">
-                                                                    <form>
-                                                                        <div class="form-radio">
-                                                                            <div class="radio radio-inline">
-                                                                                <br>
-                                                                                <label>
-                                                                                    <input type="radio" name="radio" onclick="showTertiaryTextbox();" /><i class="helper"></i>Tertiary
-                                                                                </label>
-                                                                                <div id="tertiaryTextboxGroup" class="form-group" style="display: none;">
-                                                                                    <label for="tertiaryTextbox" class="block form-control-label">Specify Tertiary</label>
-                                                                                    <input id="tertiaryTextbox" type="text" class="form-control" placeholder="">
-                                                                                </div>
-                                                                                <br>
-                                                                                <label>
-                                                                                    <input type="radio" name="radio" onclick="showTesdaTextbox();" /><i class="helper"></i>TESDA
-                                                                                </label>
-                                                                                <div id="tesdaTextboxGroup" class="form-group" style="display: none;">
-                                                                                    <label for="tesdaTextbox" class="block form-control-label">Specify TESDA</label>
-                                                                                    <input id="tesdaTextbox" type="text" class="form-control" placeholder="">
-                                                                                </div>
-                                                                                <br>
-                                                                            </div>
-                                                                        </div>
-                                                                    </form>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div>
-                                                            <div class="col-md-4">
-                                                                <div class="form-group m-r-10">
-                                                                    <label for="inline3mail" class="block form-control-label">Other source of livelihood</label>
-                                                                    <div class="col-md-3">
-                                                                        <form>
-                                                                            <div class="form-radio">
-                                                                                <div class="radio radio-inline">
-                                                                                    <br>
-                                                                                    <label>
-                                                                                        <input type="radio" name="radio" /><i class="helper"></i>Salary
-                                                                                    </label>
-                                                                                    <br>
-                                                                                    <label>
-                                                                                        <input type="radio" name="radio" /><i class="helper"></i>Farming
-                                                                                    </label>
-                                                                                    <br>
-                                                                                    <label>
-                                                                                        <input type="radio" name="radio" /><i class="helper"></i>Business
-                                                                                    </label>
-                                                                                </div>
-                                                                            </div>
-                                                                        </form>
-                                                                    </div>
-                                                                    <div class="col-md-3">
-                                                                        <form>
-                                                                            <div class="form-radio">
-                                                                                <div class="radio radio-inline" style="margin-left: 60px;">
-                                                                                    <br>
-                                                                                    <label>
-                                                                                        <input type="radio" name="radio" /><i class="helper"></i>Other
-                                                                                    </label>
-                                                                                </div>
-                                                                            </div>
-                                                                        </form>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="text-right">
-                                                            <a href="../../../BFAR_FARMC/FARMC_Profile_Form/Committee/MFARMC_Committee.php" class="btn btn-primary">Next<i class="icon-arrow-right"></i></a>
-                                                        </div>
-                                                    </div>
-                                                    <hr>
+                                                <div class="text-right">
+                                                    <a href="../../BFAR_FARMC/FARMC_MembersProfile_Form/Organizational_Membership.php" class="btn btn-primary">Next<i class="icon-arrow-right"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -728,98 +556,112 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
 
 
-                        <!-- Required Jqurey -->
-                        <script src="./../assets/plugins/jquery/dist/jquery.min.js"></script>
-                        <script src="./../assets/plugins/jquery-ui/jquery-ui.min.js"></script>
-                        <script src="./../assets/plugins/tether/dist/js/tether.min.js"></script>
+                <!-- Required Jqurey -->
+                <script src="./../assets/plugins/jquery/dist/jquery.min.js"></script>
+                <script src="./../assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+                <script src="./../assets/plugins/tether/dist/js/tether.min.js"></script>
 
-                        <!-- Required Fremwork -->
-                        <script src="./../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+                <!-- Required Fremwork -->
+                <script src="./../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 
-                        <!-- waves effects.js -->
-                        <script src="./../assets/plugins/Waves/waves.min.js"></script>
+                <!-- waves effects.js -->
+                <script src="./../assets/plugins/Waves/waves.min.js"></script>
 
-                        <!-- Scrollbar JS-->
-                        <script src="./../assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
-                        <script src="./../assets/plugins/jquery.nicescroll/jquery.nicescroll.min.js"></script>
+                <!-- Scrollbar JS-->
+                <script src="./../assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+                <script src="./../assets/plugins/jquery.nicescroll/jquery.nicescroll.min.js"></script>
 
-                        <!--classic JS-->
-                        <script src="./../assets/plugins/classie/classie.js"></script>
+                <!--classic JS-->
+                <script src="./../assets/plugins/classie/classie.js"></script>
 
-                        <!-- notification -->
-                        <script src="./../assets/plugins/notification/js/bootstrap-growl.min.js"></script>
+                <!-- notification -->
+                <script src="./../assets/plugins/notification/js/bootstrap-growl.min.js"></script>
 
-                        <!-- Date picker.js -->
-                        <script src="./../assets/plugins/datepicker/js/moment-with-locales.min.js"></script>
-                        <script src="./../assets/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+                <!-- Date picker.js -->
+                <script src="./../assets/plugins/datepicker/js/moment-with-locales.min.js"></script>
+                <script src="./../assets/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
 
-                        <!-- Select 2 js -->
-                        <script src="./../assets/plugins/select2/dist/js/select2.full.min.js"></script>
+                <!-- Select 2 js -->
+                <script src="./../assets/plugins/select2/dist/js/select2.full.min.js"></script>
 
-                        <!-- Max-Length js -->
-                        <script src="./../assets/plugins/bootstrap-maxlength/src/bootstrap-maxlength.js"></script>
+                <!-- Max-Length js -->
+                <script src="./../assets/plugins/bootstrap-maxlength/src/bootstrap-maxlength.js"></script>
 
-                        <!-- Multi Select js -->
-                        <script src="./../assets/plugins/bootstrap-multiselect/dist/js/bootstrap-multiselect.js"></script>
-                        <script src="./../assets/plugins/multiselect/js/jquery.multi-select.js"></script>
-                        <script type="text/javascript" src="./../assets/plugins/multi-select/js/jquery.quicksearch.js"></script>
+                <!-- Multi Select js -->
+                <script src="./../assets/plugins/bootstrap-multiselect/dist/js/bootstrap-multiselect.js"></script>
+                <script src="./../assets/plugins/multiselect/js/jquery.multi-select.js"></script>
+                <script type="text/javascript" src="./../assets/plugins/multi-select/js/jquery.quicksearch.js"></script>
 
-                        <!-- Tags js -->
-                        <script src="./../assets/plugins/bootstrap-tagsinput/dist/bootstrap-tagsinput.js"></script>
+                <!-- Tags js -->
+                <script src="./../assets/plugins/bootstrap-tagsinput/dist/bootstrap-tagsinput.js"></script>
 
-                        <!-- Bootstrap Datepicker js -->
-                        <script type="text/javascript" src="./../assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
-                        <script src="./../assets/plugins/bootstrap-datepicker/js/bootstrap-datetimepicker.min.js"></script>
+                <!-- Bootstrap Datepicker js -->
+                <script type="text/javascript" src="./../assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+                <script src="./../assets/plugins/bootstrap-datepicker/js/bootstrap-datetimepicker.min.js"></script>
 
-                        <!-- bootstrap range picker -->
-                        <script type="text/javascript" src="./../assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+                <!-- bootstrap range picker -->
+                <script type="text/javascript" src="./../assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
 
-                        <!-- color picker -->
-                        <script type="text/javascript" src="./../assets/plugins/spectrum/spectrum.js"></script>
-                        <script type="text/javascript" src="./../assets/plugins/jscolor/jscolor.js"></script>
+                <!-- color picker -->
+                <script type="text/javascript" src="./../assets/plugins/spectrum/spectrum.js"></script>
+                <script type="text/javascript" src="./../assets/plugins/jscolor/jscolor.js"></script>
 
-                        <!-- highlite js -->
-                        <script type="text/javascript" src="./../assets/plugins/syntaxhighlighter/scripts/shCore.js"></script>
-                        <script type="text/javascript" src="./../assets/plugins/syntaxhighlighter/scripts/shBrushJScript.js"></script>
-                        <script type="text/javascript" src="./../assets/plugins/syntaxhighlighter/scripts/shBrushXml.js"></script>
-                        <script type="text/javascript">
-                            SyntaxHighlighter.all();
-                        </script>
+                <!-- highlite js -->
+                <script type="text/javascript" src="./../assets/plugins/syntaxhighlighter/scripts/shCore.js"></script>
+                <script type="text/javascript" src="./../assets/plugins/syntaxhighlighter/scripts/shBrushJScript.js"></script>
+                <script type="text/javascript" src="./../assets/plugins/syntaxhighlighter/scripts/shBrushXml.js"></script>
+                <script type="text/javascript">
+                    SyntaxHighlighter.all();
+                </script>
 
-                        <!-- custom js -->
-                        <script type="text/javascript" src="./../assets/js/main.min.js"></script>
-                        <script type="text/javascript" src="./../assets/pages/advance-form.js"></script>
-                        <script src="assets/js/menu.min.js"></script>
-                        <script type="text/javascript">
-                            SyntaxHighlighter.all();
-                        </script>
+                <!-- custom js -->
+                <script type="text/javascript" src="./../assets/js/main.min.js"></script>
+                <script type="text/javascript" src="./../assets/pages/advance-form.js"></script>
+                <script src="assets/js/menu.min.js"></script>
+                <script type="text/javascript">
+                    SyntaxHighlighter.all();
+                </script>
 
-                        <script>
-                            document.querySelectorAll('input[name="culturalCommunity"]').forEach(function(radio) {
-                                radio.addEventListener('change', function() {
-                                    if (this.value === 'yes') {
-                                        document.getElementById('culturalCommunityDetails').style.display = 'block';
-                                    } else {
-                                        document.getElementById('culturalCommunityDetails').style.display = 'none';
-                                    }
-                                });
-                            });
-                        </script>
-
-
-                        <script>
-                            function showTertiaryTextbox() {
-                                document.getElementById('tertiaryTextboxGroup').style.display = 'block';
-                                document.getElementById('tesdaTextboxGroup').style.display = 'none';
+                <script>
+                    document.querySelectorAll('input[name="culturalCommunity"]').forEach(function(radio) {
+                        radio.addEventListener('change', function() {
+                            if (this.value === 'yes') {
+                                document.getElementById('culturalCommunityDetails').style.display = 'block';
+                            } else {
+                                document.getElementById('culturalCommunityDetails').style.display = 'none';
                             }
+                        });
+                    });
+                </script>
 
-                            function showTesdaTextbox() {
-                                document.getElementById('tesdaTextboxGroup').style.display = 'block';
-                                document.getElementById('tertiaryTextboxGroup').style.display = 'none';
+                <script>
+                    document.querySelectorAll('input[name="OtherOffice"]').forEach(function(radio) {
+                        radio.addEventListener('change', function() {
+                            if (this.value === 'yes') {
+                                document.getElementById('OtherOfficeDetails').style.display = 'block';
+                            } else {
+                                document.getElementById('OtherOfficeDetails').style.display = 'none';
                             }
-                        </script>
+                        });
+                    });
+                </script>
+
+
+                <script>
+                    function showTertiaryTextbox() {
+                        document.getElementById('tertiaryTextboxGroup').style.display = 'block';
+                        document.getElementById('tesdaTextboxGroup').style.display = 'none';
+                    }
+
+                    function showTesdaTextbox() {
+                        document.getElementById('tesdaTextboxGroup').style.display = 'block';
+                        document.getElementById('tertiaryTextboxGroup').style.display = 'none';
+                    }
+                </script>
     </body>
 
 </html>
