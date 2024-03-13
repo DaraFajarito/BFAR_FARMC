@@ -512,9 +512,9 @@
                                                             <div style="display: flex; justify-content: space-between;">
                                                                 <div style="flex: 1;">
                                                                     <p style="text-align:center">I hereby certify that the above information is true and correct to the best of my knowledge and belief.</p>
-                                                                    <br>
                                                                     <div style="width: 345px; border-top: 1px solid black; margin: 20px 20px;"></div>
-                                                                    <p style="text-align:center">Member's Signature</p>
+                                                                    <label for="signatureFile" class="signature-line" style="text-align:center; display: block;">Member's Signature</label>
+                                                                    <input type="file" id="signatureFile" accept="image/*" style="display: none;">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -530,132 +530,157 @@
                                                                 <p>Thumbmarks</p>
                                                             </div>
                                                         </div>
-                                                        <div style="width: 130px; height: 120px; border: 1px solid black; display: flex; align-items: center; justify-content: center;">1x1 Photo</div> <!-- 1x1 photo box -->
+                                                        <div style="width: 130px; height: 120px; border: 1px solid black; display: flex; align-items: center; justify-content: center; margin-right: 20px;">
+                                                            <input type="file" id="photo1x1" accept="image/*" style="display: none;">
+                                                            <label for="photo1x1" style="cursor: pointer;">1x1 Photo</label> <!-- 1x1 photo box -->
+                                                        </div>
                                                     </div>
+
+                                                    <script>
+                                                        // Add JavaScript code here to handle file uploads
+                                                        document.querySelector('.signature-line').addEventListener('click', function() {
+                                                            document.getElementById('signatureFile').click();
+                                                        });
+
+                                                        document.getElementById('signatureFile').addEventListener('change', function() {
+                                                            const file = this.files[0];
+                                                            if (file) {
+                                                                // Handle the uploaded signature file
+                                                                console.log('Uploaded signature file:', file);
+                                                            }
+                                                        });
+
+                                                        document.getElementById('photo1x1').addEventListener('change', function() {
+                                                            const file = this.files[0];
+                                                            if (file) {
+                                                                // Handle the uploaded 1x1 photo file
+                                                                console.log('Uploaded 1x1 photo file:', file);
+                                                            }
+                                                        });
+                                                    </script>
+
                                                 </div>
-
                                             </div>
-                                        </div>
 
 
 
 
 
 
-                                        <!-- <div class="text-right">
+                                            <!-- <div class="text-right">
                                                         <a href="../../BFAR_FARMC/FARMC_MembersProfile_Form/" class="btn btn-primary">Next<i class="icon-arrow-right"></i></a>
                                                     </div> -->
-                                    </div>
+                                        </div>
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
 
-            <!-- Required Jqurey -->
-            <script src="./../assets/plugins/jquery/dist/jquery.min.js"></script>
-            <script src="./../assets/plugins/jquery-ui/jquery-ui.min.js"></script>
-            <script src="./../assets/plugins/tether/dist/js/tether.min.js"></script>
+                <!-- Required Jqurey -->
+                <script src="./../assets/plugins/jquery/dist/jquery.min.js"></script>
+                <script src="./../assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+                <script src="./../assets/plugins/tether/dist/js/tether.min.js"></script>
 
-            <!-- Required Fremwork -->
-            <script src="./../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+                <!-- Required Fremwork -->
+                <script src="./../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 
-            <!-- waves effects.js -->
-            <script src="./../assets/plugins/Waves/waves.min.js"></script>
+                <!-- waves effects.js -->
+                <script src="./../assets/plugins/Waves/waves.min.js"></script>
 
-            <!-- Scrollbar JS-->
-            <script src="./../assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
-            <script src="./../assets/plugins/jquery.nicescroll/jquery.nicescroll.min.js"></script>
+                <!-- Scrollbar JS-->
+                <script src="./../assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+                <script src="./../assets/plugins/jquery.nicescroll/jquery.nicescroll.min.js"></script>
 
-            <!--classic JS-->
-            <script src="./../assets/plugins/classie/classie.js"></script>
+                <!--classic JS-->
+                <script src="./../assets/plugins/classie/classie.js"></script>
 
-            <!-- notification -->
-            <script src="./../assets/plugins/notification/js/bootstrap-growl.min.js"></script>
+                <!-- notification -->
+                <script src="./../assets/plugins/notification/js/bootstrap-growl.min.js"></script>
 
-            <!-- Date picker.js -->
-            <script src="./../assets/plugins/datepicker/js/moment-with-locales.min.js"></script>
-            <script src="./../assets/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+                <!-- Date picker.js -->
+                <script src="./../assets/plugins/datepicker/js/moment-with-locales.min.js"></script>
+                <script src="./../assets/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
 
-            <!-- Select 2 js -->
-            <script src="./../assets/plugins/select2/dist/js/select2.full.min.js"></script>
+                <!-- Select 2 js -->
+                <script src="./../assets/plugins/select2/dist/js/select2.full.min.js"></script>
 
-            <!-- Max-Length js -->
-            <script src="./../assets/plugins/bootstrap-maxlength/src/bootstrap-maxlength.js"></script>
+                <!-- Max-Length js -->
+                <script src="./../assets/plugins/bootstrap-maxlength/src/bootstrap-maxlength.js"></script>
 
-            <!-- Multi Select js -->
-            <script src="./../assets/plugins/bootstrap-multiselect/dist/js/bootstrap-multiselect.js"></script>
-            <script src="./../assets/plugins/multiselect/js/jquery.multi-select.js"></script>
-            <script type="text/javascript" src="./../assets/plugins/multi-select/js/jquery.quicksearch.js"></script>
+                <!-- Multi Select js -->
+                <script src="./../assets/plugins/bootstrap-multiselect/dist/js/bootstrap-multiselect.js"></script>
+                <script src="./../assets/plugins/multiselect/js/jquery.multi-select.js"></script>
+                <script type="text/javascript" src="./../assets/plugins/multi-select/js/jquery.quicksearch.js"></script>
 
-            <!-- Tags js -->
-            <script src="./../assets/plugins/bootstrap-tagsinput/dist/bootstrap-tagsinput.js"></script>
+                <!-- Tags js -->
+                <script src="./../assets/plugins/bootstrap-tagsinput/dist/bootstrap-tagsinput.js"></script>
 
-            <!-- Bootstrap Datepicker js -->
-            <script type="text/javascript" src="./../assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
-            <script src="./../assets/plugins/bootstrap-datepicker/js/bootstrap-datetimepicker.min.js"></script>
+                <!-- Bootstrap Datepicker js -->
+                <script type="text/javascript" src="./../assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+                <script src="./../assets/plugins/bootstrap-datepicker/js/bootstrap-datetimepicker.min.js"></script>
 
-            <!-- bootstrap range picker -->
-            <script type="text/javascript" src="./../assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+                <!-- bootstrap range picker -->
+                <script type="text/javascript" src="./../assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
 
-            <!-- color picker -->
-            <script type="text/javascript" src="./../assets/plugins/spectrum/spectrum.js"></script>
-            <script type="text/javascript" src="./../assets/plugins/jscolor/jscolor.js"></script>
+                <!-- color picker -->
+                <script type="text/javascript" src="./../assets/plugins/spectrum/spectrum.js"></script>
+                <script type="text/javascript" src="./../assets/plugins/jscolor/jscolor.js"></script>
 
-            <!-- highlite js -->
-            <script type="text/javascript" src="./../assets/plugins/syntaxhighlighter/scripts/shCore.js"></script>
-            <script type="text/javascript" src="./../assets/plugins/syntaxhighlighter/scripts/shBrushJScript.js"></script>
-            <script type="text/javascript" src="./../assets/plugins/syntaxhighlighter/scripts/shBrushXml.js"></script>
-            <script type="text/javascript">
-                SyntaxHighlighter.all();
-            </script>
+                <!-- highlite js -->
+                <script type="text/javascript" src="./../assets/plugins/syntaxhighlighter/scripts/shCore.js"></script>
+                <script type="text/javascript" src="./../assets/plugins/syntaxhighlighter/scripts/shBrushJScript.js"></script>
+                <script type="text/javascript" src="./../assets/plugins/syntaxhighlighter/scripts/shBrushXml.js"></script>
+                <script type="text/javascript">
+                    SyntaxHighlighter.all();
+                </script>
 
-            <!-- custom js -->
-            <script type="text/javascript" src="./../assets/js/main.min.js"></script>
-            <script type="text/javascript" src="./../assets/pages/advance-form.js"></script>
-            <script src="assets/js/menu.min.js"></script>
-            <script type="text/javascript">
-                SyntaxHighlighter.all();
-            </script>
+                <!-- custom js -->
+                <script type="text/javascript" src="./../assets/js/main.min.js"></script>
+                <script type="text/javascript" src="./../assets/pages/advance-form.js"></script>
+                <script src="assets/js/menu.min.js"></script>
+                <script type="text/javascript">
+                    SyntaxHighlighter.all();
+                </script>
 
-            <script>
-                document.querySelectorAll('input[name="culturalCommunity"]').forEach(function(radio) {
-                    radio.addEventListener('change', function() {
-                        if (this.value === 'yes') {
-                            document.getElementById('culturalCommunityDetails').style.display = 'block';
-                        } else {
-                            document.getElementById('culturalCommunityDetails').style.display = 'none';
-                        }
+                <script>
+                    document.querySelectorAll('input[name="culturalCommunity"]').forEach(function(radio) {
+                        radio.addEventListener('change', function() {
+                            if (this.value === 'yes') {
+                                document.getElementById('culturalCommunityDetails').style.display = 'block';
+                            } else {
+                                document.getElementById('culturalCommunityDetails').style.display = 'none';
+                            }
+                        });
                     });
-                });
-            </script>
+                </script>
 
 
-            <script>
-                function toggleTextBox(radioId) {
-                    var textBoxGroup = document.getElementById('textBoxGroup');
-                    if (radioId === 'christianRadio') {
-                        textBoxGroup.style.display = 'block';
-                    } else {
-                        textBoxGroup.style.display = 'none';
+                <script>
+                    function toggleTextBox(radioId) {
+                        var textBoxGroup = document.getElementById('textBoxGroup');
+                        if (radioId === 'christianRadio') {
+                            textBoxGroup.style.display = 'block';
+                        } else {
+                            textBoxGroup.style.display = 'none';
+                        }
                     }
-                }
-            </script>
+                </script>
 
-            <script>
-                function showTertiaryTextbox() {
-                    document.getElementById('tertiaryTextboxGroup').style.display = 'block';
-                    document.getElementById('tesdaTextboxGroup').style.display = 'none';
-                }
+                <script>
+                    function showTertiaryTextbox() {
+                        document.getElementById('tertiaryTextboxGroup').style.display = 'block';
+                        document.getElementById('tesdaTextboxGroup').style.display = 'none';
+                    }
 
-                function showTesdaTextbox() {
-                    document.getElementById('tesdaTextboxGroup').style.display = 'block';
-                    document.getElementById('tertiaryTextboxGroup').style.display = 'none';
-                }
-            </script>
+                    function showTesdaTextbox() {
+                        document.getElementById('tesdaTextboxGroup').style.display = 'block';
+                        document.getElementById('tertiaryTextboxGroup').style.display = 'none';
+                    }
+                </script>
 
 
     </body>

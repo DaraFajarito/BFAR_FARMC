@@ -446,20 +446,29 @@
                                                             </form>
                                                         </div>
                                                         <div class="col-md-3">
-                                                            <div class="grid-material bg-general"><em>Person w/ Disability (PWD)</em></div>
-                                                            <form>
-                                                                <div class="form-radio">
-                                                                    <div class="radio radio-inline">
+                                                            <div class="col-sm-12 col-xs-12 waves-effect waves-light">
+                                                                <div class="grid-material bg-general"><em>Person w/ Disabiliy (PWD)</em></div>
 
-                                                                        <label>
-                                                                            <input type="radio" name="radio" /><i class="helper"></i>Male
-                                                                        </label>
-                                                                        <label>
-                                                                            <input type="radio" name="radio" /><i class="helper"></i>Female
+                                                                <form class="form-inline">
+                                                                    <div class="form-check">
+                                                                        <label for="pwd" class="form-check-label">
+                                                                            <input type="radio" class="form-check-input" name="Disability" value="yes" id="yes(pwd)">
+                                                                            Yes
                                                                         </label>
                                                                     </div>
-                                                                </div>
-                                                            </form>
+                                                                    <br>
+                                                                    <div class="form-check">
+                                                                        <label for="pwd" class="form-check-label">
+                                                                            <input type="radio" class="form-check-input" name="Disability" value="no" id="no (pwd)">
+                                                                            No
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-group" id="DisabilityDetails" style="display:none;">
+                                                                        <label for="inline3mail" class="block form-control-label">Specify, if yes</label>
+                                                                        <input id="inline3mail" type="email" class="form-control" placeholder="">
+                                                                    </div>
+                                                                </form>
+                                                            </div>
                                                         </div>
 
                                                         <div class="col-md-3">
@@ -766,6 +775,18 @@
                                         document.getElementById('culturalCommunityDetails').style.display = 'block';
                                     } else {
                                         document.getElementById('culturalCommunityDetails').style.display = 'none';
+                                    }
+                                });
+                            });
+                        </script>
+
+                        <script>
+                            document.querySelectorAll('input[name="Disability"]').forEach(function(radio) {
+                                radio.addEventListener('change', function() {
+                                    if (this.value === 'yes') {
+                                        document.getElementById('DisabilityDetails').style.display = 'block';
+                                    } else {
+                                        document.getElementById('DisabilityDetails').style.display = 'none';
                                     }
                                 });
                             });
