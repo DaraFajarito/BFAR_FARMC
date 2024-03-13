@@ -510,11 +510,10 @@
                                                     <div class="row">
                                                         <div class="col-md-4">
                                                             <div style="display: flex; justify-content: space-between;">
-                                                                <div style="flex: 1;">
-                                                                    <p style="text-align:center">I hereby certify that the above information is true and correct to the best of my knowledge and belief.</p>
-                                                                    <div style="width: 345px; border-top: 1px solid black; margin: 20px 20px;"></div>
-                                                                    <label for="signatureFile" class="signature-line" style="text-align:center; display: block;">Member's Signature</label>
-                                                                    <input type="file" id="signatureFile" accept="image/*" style="display: none;">
+                                                                <div style="flex: 1;" class="signature-container">
+                                                                    <p style="text-align:center; margin: 0;">I hereby certify that the above information is true and correct to the best of my knowledge and belief.</p>
+                                                                    <input type="file" id="signatureFile" accept="image/*">
+                                                                    <label for="signatureFile" class="signature-line">Member's Signature</label>
                                                                 </div>
                                                             </div>
                                                         </div>
