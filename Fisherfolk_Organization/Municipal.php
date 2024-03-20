@@ -219,9 +219,9 @@
                         </li>
 
                         <li class="nav-level">--- FARMC Org</li>
-                        <li class="treeview"><a class="waves-effect waves-dark" href="#!"><i class="icon-briefcase"></i><span>Fisherfolk Organization </span><i class="icon-arrow-down"></i></a>
+                        <li class="treeview"><a class="waves-effect waves-dark" href="../BFAR_FARMC/Fisherfolk_Organization/Municipal.php"><i class="icon-briefcase"></i><span>Fisherfolk Organization </span><i class="icon-arrow-down"></i></a>
                             <ul class="treeview-menu">
-                                <li><a class="waves-effect waves-dark" href="accordion.html"><i class="icon-arrow-right"></i>2.1 Municipal</a></li>
+                                <li><a class="waves-effect waves-dark" href="Municipal.php"><i class="icon-arrow-right"></i>2.1 Municipal</a></li>
                                 <li><a class="waves-effect waves-dark" href="button.html"><i class="icon-arrow-right"></i>2.2 Fishworker</a></li>
                                 <li><a class="waves-effect waves-dark" href="label-badge.html"><i class="icon-arrow-right"></i>2.3 Commercial</a></li>
                                 <li><a class="waves-effect waves-dark" href="label-badge.html"><i class="icon-arrow-right"></i>2.4 Women Fisherfolk</a></li>
@@ -291,7 +291,7 @@
                                         </li>
                                     </ol>
                                 </div>
-                                <a href="../../BFAR_FARMC/FARMC_MembersProfile_Form/FARMC_Membership.php" class="btn btn-secondary"> <i class="icon-arrow-left"></i> Back</a>
+                                <a href="Level1.php" class="btn btn-secondary"> <i class="icon-arrow-left"></i> Back</a>
                                 <br> <br>
                                 <div class="card">
                                     <div class="card-block">
@@ -300,29 +300,51 @@
                                         <div class="card inline-form-style">
                                             <div class="card-header">
                                                 <div class="col-sm-6 col-xs-6 waves-effect waves-light">
-                                                    <div class="grid-material bg-general">Organizational Membership</div>
+                                                    <div class="grid-material bg-general">Personal Information</div>
                                                 </div>
-                                                <div class="col-sm-6 col-xs-6 waves-effect waves-light">
-                                                    <div class="grid-material bg-general"></div>
-                                                </div>
+                                                <!-- <div class="col-sm-6 col-xs-6 waves-effect waves-light">
+                                                    <div class="grid-material bg-general">Contact Information</div>
+                                                </div> -->
 
 
 
                                                 <div class="card-block">
                                                     <div class="row">
-                                                        <div class="col-md-9">
+                                                        <div class="col-md-6">
                                                             <form class="form-inline">
                                                                 <div class="form-group m-r-15">
-                                                                    <label for="inline3mail" class="block form-control-label">Name of Association/Organization/Cooperative <em></em></label>
-                                                                    <input id="inline3mail" type="email" class="form-control" style="width: 700px;" placeholder="">
+                                                                    <label for="inline3mail" class="block form-control-label">Name <em>(Family,given,middle & Ext.)</em></label>
+                                                                    <input id="inline3mail" type="email" class="form-control" style="width: 500px;" placeholder="Enter name">
+                                                                </div>
+                                                            </form>
+                                                            <br>
+
+                                                            <!-- <form class="form-inline">
+                                                                <div class="form-group m-r-15">
+                                                                    <label for="inline3mail" class="block form-control-label">Address <em>(Barangay, City/Municipality, Province & Region)</em></label>
+                                                                    <input id="inline3mail" type="email" class="form-control" style="width: 500px;" placeholder="Enter name">
+                                                                </div>
+                                                            </form> -->
+                                                        </div>
+
+                                                        <div class="col-md-6">
+
+                                                            <form class="form-inline">
+                                                                <div class="form-group m-r-15">
+                                                                    <label for="inline3mail" class="block form-control-label">Landline No.</label>
+                                                                    <input id="inline3mail" type="email" class="form-control" placeholder="Landline No.">
+                                                                </div>
+                                                                <div class="form-group m-r-15">
+                                                                    <label for="inline3mail" class="block form-control-label">Mobile No.</label>
+                                                                    <input id="inline3mail" type="email" class="form-control" placeholder="Mobile No.">
                                                                 </div>
                                                             </form>
                                                             <br>
 
                                                             <form class="form-inline">
                                                                 <div class="form-group m-r-15">
-                                                                    <label for="inline3mail" class="block form-control-label">Address of Association/Organization/Cooperative <em></em></label>
-                                                                    <input id="inline3mail" type="email" class="form-control" style="width: 700px;" placeholder="">
+                                                                    <label for="inline3mail" class="block form-control-label">Email Add</label>
+                                                                    <input id="inline3mail" type="email" class="form-control" style="width: 450px;" placeholder="Email Add">
                                                                 </div>
                                                             </form>
                                                         </div>
@@ -330,100 +352,85 @@
                                                     <hr>
                                                     <!-- <div class="card-block"> -->
                                                     <div class="row">
-                                                        <div class="col-md-4    ">
-                                                            <div class="grid-material bg-general"><em>Composition of Membership</em></div>
+                                                        <div class="col-md-3">
+                                                            <div class="grid-material bg-general"><em>Civil Status</em></div>
                                                             <form>
                                                                 <div class="form-radio">
                                                                     <div class="radio radio-inline">
 
                                                                         <label>
-                                                                            <input type="radio" name="radio" c /><i class="helper"></i>Municipal
+                                                                            <input type="radio" name="radio" c /><i class="helper"></i>Single
                                                                         </label>
                                                                         <label>
-                                                                            <input type="radio" name="radio" /><i class="helper"></i>Fishworker
+                                                                            <input type="radio" name="radio" /><i class="helper"></i>Married
                                                                         </label>
                                                                         <label>
-                                                                            <input type="radio" name="radio" /><i class="helper"></i>Cultural Community (IP's)
+                                                                            <input type="radio" name="radio" /><i class="helper"></i>Widow/Widower
                                                                         </label>
                                                                         <label>
-                                                                            <input type="radio" name="radio" /><i class="helper"></i>Commercial
-                                                                        </label>
-                                                                        <label>
-                                                                            <input type="radio" name="radio" /><i class="helper"></i>Women/Youth
+                                                                            <input type="radio" name="radio" /><i class="helper"></i>Separated
                                                                         </label>
                                                                     </div>
                                                                 </div>
                                                             </form>
                                                         </div>
-                                                        <div class="col-md-4">
-                                                            <div class="grid-material bg-general"><em>Registration of Association</em></div>
+                                                        <div class="col-md-3">
+                                                            <div class="grid-material bg-general"><em>Gender</em></div>
                                                             <form>
                                                                 <div class="form-radio">
                                                                     <div class="radio radio-inline">
 
                                                                         <label>
-                                                                            <input type="radio" name="radio" /><i class="helper"></i>Yes
+                                                                            <input type="radio" name="radio" /><i class="helper"></i>Male
                                                                         </label>
                                                                         <label>
-                                                                            <input type="radio" name="radio" /><i class="helper"></i>No
+                                                                            <input type="radio" name="radio" /><i class="helper"></i>Female
                                                                         </label>
-                                                                    </div>
-                                                                </div>
-                                                            </form>
-                                                            <form>
-                                                                <div class="form-inline">
-                                                                    <div>
-                                                                        <label for="textBox">If yes, what agency</label>
-                                                                        <label>
-                                                                            <input type="text" class="form-control" placeholder="" style="width:150px">
-                                                                        </label>
-
                                                                     </div>
                                                                 </div>
                                                             </form>
                                                         </div>
 
-                                                        <!-- <div class="radio-container">
-                                                            <em>Set 1:</em>
-                                                            <div class="form-group" style="width: 200px;">
-                                                                <label for="option1_textbox1" class="block form-control-label">Option 1</label>
-                                                                <input id="option1_textbox1" type="text" class="form-control" placeholder="Option 1">
-                                                            </div>
-                                                            <div class="form-group" style="width: 200px;">
-                                                                <label for="option1_textbox2" class="block form-control-label">Option 2</label>
-                                                                <input id="option1_textbox2" type="text" class="form-control" placeholder="Option 2">
-                                                            </div>
-                                                        </div> -->
+                                                        <div class="col-md-3">
+                                                            <div class="col-sm-12 col-xs-12 waves-effect waves-light">
+                                                                <div class="grid-material bg-general">Birthdate</div>
 
-                                                        <div class="col-md-4">
-                                                            <div class="grid-material bg-general"><em>LGU Accreditation</em></div>
-                                                            <form>
-                                                                <div class="radio-container">
+                                                                <form>
                                                                     <div class="form-group">
-                                                                        <input type="radio" class="form-check-input" name="option" value="yes" id="yes_radio">
-                                                                        <label class="form-check-label" for="yes_radio">Yes</label>
+                                                                        <label for="inline3mail" class="block form-control-label">Date</label>
+                                                                        <input id="inline3mail" type="email" class="form-control" placeholder="Date">
                                                                     </div>
                                                                     <div class="form-group">
-                                                                        <input type="radio" class="form-check-input" name="option" value="no" id="no_radio">
-                                                                        <label class="form-check-label" for="no_radio">No</label>
+                                                                        <label for="inline3mail" class="block form-control-label">Ages</label>
+                                                                        <input id="inline3mail" type="email" class="form-control" placeholder="Ages">
                                                                     </div>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="reg_no">Reg. No.</label>
-                                                                    <input id="reg_no" type="text" class="form-control" placeholder="Reg. No.">
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="date">Date</label>
-                                                                    <input id="date" type="text" class="form-control" placeholder="Date">
-                                                                </div>
-                                                            </form>
+                                                                </form </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="col-md-3">
+                                                            <div class="col-sm-12 col-xs-12 waves-effect waves-light">
+                                                                <div class="grid-material bg-general">Birthplace</div>
+
+                                                                <form>
+                                                                    <div class="form-group">
+                                                                        <label for="inline3mail" class="block form-control-label">City/Municipality</label>
+                                                                        <input id="inline3mail" type="email" class="form-control" placeholder="Date">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label for="inline3mail" class="block form-control-label">Province</label>
+                                                                        <input id="inline3mail" type="email" class="form-control" placeholder="Ages">
+                                                                    </div>
+                                                                </form </div>
+                                                            </div>
                                                         </div>
                                                     </div>
 
                                                     <hr>
                                                     <div class="row">
-                                                        <div class="col-md-4">
-                                                            <div class="grid-material bg-general"><em>Officer of Association</em></div>
+                                                        <div class="col-md-3">
+                                                            <div class="grid-material bg-general"><em>4P's Member</em></div>
                                                             <form>
                                                                 <div class="form-radio">
                                                                     <div class="radio radio-inline">
@@ -434,252 +441,380 @@
                                                                         <label>
                                                                             <input type="radio" name="radio" /><i class="helper"></i>No
                                                                         </label>
-                                                                        <label>
-                                                                            <input type="radio" name="radio" /><i class="helper"></i>Member only
-                                                                        </label>
-                                                                    </div>
-                                                                </div>
-                                                            </form>
-                                                            <form>
-                                                                <div class="form-inline">
-                                                                    <div>
-                                                                        <label for="textBox">Specify, if yes</label>
-                                                                        <label>
-                                                                            <input type="text" class="form-control" placeholder="" style="width:150px">
-                                                                        </label>
-
                                                                     </div>
                                                                 </div>
                                                             </form>
                                                         </div>
+                                                        <div class="col-md-3">
+                                                            <div class="col-sm-12 col-xs-12 waves-effect waves-light">
+                                                                <div class="grid-material bg-general"><em>Person w/ Disabiliy (PWD)</em></div>
 
-
-                                                        <!-- <div class="radio-container">
-                                                            <em>Set 1:</em>
-                                                            <div class="form-group" style="width: 200px;">
-                                                                <label for="option1_textbox1" class="block form-control-label">Option 1</label>
-                                                                <input id="option1_textbox1" type="text" class="form-control" placeholder="Option 1">
+                                                                <form class="form-inline">
+                                                                    <div class="form-check">
+                                                                        <label for="pwd" class="form-check-label">
+                                                                            <input type="radio" class="form-check-input" name="Disability" value="yes" id="yes(pwd)">
+                                                                            Yes
+                                                                        </label>
+                                                                    </div>
+                                                                    <br>
+                                                                    <div class="form-check">
+                                                                        <label for="pwd" class="form-check-label">
+                                                                            <input type="radio" class="form-check-input" name="Disability" value="no" id="no (pwd)">
+                                                                            No
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-group" id="DisabilityDetails" style="display:none;">
+                                                                        <label for="inline3mail" class="block form-control-label">Specify, if yes</label>
+                                                                        <input id="inline3mail" type="email" class="form-control" placeholder="">
+                                                                    </div>
+                                                                </form>
                                                             </div>
-                                                            <div class="form-group" style="width: 200px;">
-                                                                <label for="option1_textbox2" class="block form-control-label">Option 2</label>
-                                                                <input id="option1_textbox2" type="text" class="form-control" placeholder="Option 2">
-                                                            </div>
-                                                        </div> -->
-
-                                                        <div class="col-md-4">
-                                                            <div class="grid-material bg-general"><em>Involvement in Mangingisdang Director Program</em></div>
-                                                            <form>
-                                                                <div class="radio-container">
-                                                                    <div class="form-group">
-                                                                        <input type="radio" class="form-check-input" name="option" value="pro" id="pro_radio">
-                                                                        <label class="form-check-label" for="pro_radio">Provincial Fisherfolk Representative</label>
-                                                                    </div>
-                                                                    <div class="form-group">
-                                                                        <input type="radio" class="form-check-input" name="option" value="re" id="re_radio">
-                                                                        <label class="form-check-label" for="re_radio">Regional Fisherfolk Director</label>
-                                                                    </div>
-                                                                    <div class="form-group">
-                                                                        <input type="radio" class="form-check-input" name="option" value="na" id="na_radio">
-                                                                        <label class="form-check-label" for="na_radio">National Fisherfolk Director</label>
-                                                                    </div>
-                                                                </div>
-                                                            </form>
                                                         </div>
-                                                        <div class="col-md-4">
-                                                            <div class="grid-material bg-general"><em>Year Elected</em></div>
-                                                            <form>
-                                                                <div class="form-inline">
-                                                                    <div>
-                                                                        <label>
-                                                                            <input type="text" class="form-control" placeholder="" style="width:150px">
-                                                                        </label>
-                                                                        <br>
-                                                                        <label>
-                                                                            <input type="text" class="form-control" placeholder="" style="width:150px">
-                                                                        </label>
-                                                                        <br>
-                                                                        <label>
-                                                                            <input type="yexy" class="form-control" placeholder="" style="width:150px">
+
+                                                        <div class="col-md-3">
+                                                            <div class="col-sm-12 col-xs-12 waves-effect waves-light">
+                                                                <div class="grid-material bg-general"><em>Cultural Community (IP's)</em></div>
+
+                                                                <form class="form-inline">
+                                                                    <div class="form-check">
+                                                                        <label for="optionsRadios2" class="form-check-label">
+                                                                            <input type="radio" class="form-check-input" name="culturalCommunity" value="yes" id="optionsRadios3">
+                                                                            Yes
                                                                         </label>
                                                                     </div>
-                                                                </div>
-                                                            </form>
+                                                                    <br>
+                                                                    <div class="form-check">
+                                                                        <label for="optionsRadios2" class="form-check-label">
+                                                                            <input type="radio" class="form-check-input" name="culturalCommunity" value="no" id="optionsRadios4">
+                                                                            No
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-group" id="culturalCommunityDetails" style="display:none;">
+                                                                        <label for="inline3mail" class="block form-control-label">Specify, if yes</label>
+                                                                        <input id="inline3mail" type="email" class="form-control" placeholder="">
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="col-md-3">
+                                                            <div class="col-sm-12 col-xs-12 waves-effect waves-light">
+                                                                <div class="grid-material bg-general"><em>Religion Affiliation</em></div>
+
+                                                                <form class="form-inline">
+                                                                    <div class="form-check">
+                                                                        <label for="islamRadio" class="form-check-label">
+                                                                            <input type="radio" class="form-check-input" name="religionRadios" id="islamRadio" value="Islam" onchange="toggleTextBox('islamRadio');">
+                                                                            Islam
+                                                                        </label>
+                                                                    </div>
+                                                                    <br>
+                                                                    <div class="form-check">
+                                                                        <label for="christianRadio" class="form-check-label">
+                                                                            <input type="radio" class="form-check-input" name="religionRadios" id="christianRadio" value="Christian" onchange="toggleTextBox('christianRadio');">
+                                                                            Christian
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-group" id="textBoxGroup" style="display: none;">
+                                                                        <label for="inline3mail" class="block form-control-label">If Christian, please specify</label>
+                                                                        <input id="inline3mail" type="email" class="form-control" placeholder="">
+                                                                    </div>
+                                                                </form>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <hr>
                                                     <div class="row">
+                                                        <div class="col-md-8">
+                                                            <form class="form-inline">
+                                                                <div class="form-group m-r-15">
+                                                                    <label for="inline3mail" class="block form-control-label">Name Spouse<em>(Family, Given, Middle)</em></label>
+                                                                    <input id="inline3mail" type="email" class="form-control" style="width: 650px;" placeholder="Enter name">
+                                                                </div>
+                                                            </form>
+                                                        </div>
+
                                                         <div class="col-md-4">
-                                                            <div style="display: flex; justify-content: space-between;">
-                                                                <div style="flex: 1;" class="signature-container">
-                                                                    <p style="text-align:center; margin: 0;">I hereby certify that the above information is true and correct to the best of my knowledge and belief.</p>
-                                                                    <input type="file" id="signatureFile" accept="image/*">
-                                                                    <label for="signatureFile" class="signature-line">Member's Signature</label>
+                                                            <div class="col-sm-12 col-xs-12 waves-effect waves-light">
+                                                                <form>
+                                                                    <div class="form-group">
+                                                                        <label for="inline3mail" class="block form-control-label">Occupation</label>
+                                                                        <input id="inline3mail" type="email" class="form-control" placeholder="Date">
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <hr>
+
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="form-group m-r-15">
+                                                                <!-- <hr> -->
+                                                                <label for="inline3mail" class="block form-control-label">No. of Dependent/s</em></label>
+                                                                <div class="col-md-3">
+                                                                    <form>
+                                                                        <div class="form-radio">
+                                                                            <div class="radio radio-inline">
+                                                                                <br>
+                                                                                <label>
+                                                                                    <input type="radio" name="radio" /><i class="helper"></i>Male
+                                                                                </label>
+                                                                                <br>
+                                                                                <label>
+                                                                                    <input type="radio" name="radio" /><i class="helper"></i>Female
+                                                                                </label>
+                                                                                <br>
+                                                                                <label>
+                                                                                    <input type="radio" name="radio" /><i class="helper"></i>Others
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                                <div class="col-md-1">
+                                                                    <form>
+                                                                        <div class="form-inline">
+                                                                            <div>
+                                                                                <label>
+                                                                                    <input type="number" class="form-control" placeholder="" style="width:150px">
+                                                                                </label>
+                                                                                <br>
+                                                                                <br>
+                                                                                <label>
+                                                                                    <input type="number" class="form-control" placeholder="" style="width:150px">
+
+                                                                                </label>
+                                                                                <br>
+                                                                                <br>
+                                                                                <label>
+                                                                                    <input type="number" class="form-control" placeholder="" style="width:150px">
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="col-md-4">
-                                                            <div style="flex: 1; display: flex; padding-left:60px;">
-                                                                <div style="width: 120px; height: 110px; border: 1px solid black; margin-right: 20px;"></div> <!-- First Thumbmarks box -->
-                                                                <div style="width: 120px; height: 110px; border: 1px solid black;"></div> <!-- Second Thumbmarks box -->
-                                                            </div>
-                                                            <div style="flex: 1; display: flex; align-items: center;">
-                                                                <div style="width: 20px;"></div> <!-- Add space between thumbmarks and photo box -->
-                                                            </div>
-                                                            <div style="text-align: center;">
-                                                                <p>Thumbmarks</p>
+                                                            <div class="form-group m-r-15">
+                                                                <label for="inline3mail" class="block form-control-label">Educational Attainment/Level</em></label>
+                                                                <div class="col-md-5">
+                                                                    <form>
+                                                                        <div class="form-radio">
+                                                                            <div class="radio radio-inline">
+                                                                                <br>
+                                                                                <label>
+                                                                                    <input type="radio" name="radio" /><i class="helper"></i>Primary
+                                                                                </label>
+                                                                                <br>
+                                                                                <label>
+                                                                                    <input type="radio" name="radio" /><i class="helper"></i>Secondary
+                                                                                </label>
+                                                                                <br>
+                                                                                <label>
+                                                                                    <input type="radio" name="radio" /><i class="helper"></i>Vocational
+                                                                                </label>
+                                                                                <br>
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <form>
+                                                                        <div class="form-radio">
+                                                                            <div class="radio radio-inline">
+                                                                                <br>
+                                                                                <label>
+                                                                                    <input type="radio" name="radio" onclick="showTertiaryTextbox();" /><i class="helper"></i>Tertiary
+                                                                                </label>
+                                                                                <div id="tertiaryTextboxGroup" class="form-group" style="display: none;">
+                                                                                    <label for="tertiaryTextbox" class="block form-control-label">Specify Tertiary</label>
+                                                                                    <input id="tertiaryTextbox" type="text" class="form-control" placeholder="">
+                                                                                </div>
+                                                                                <br>
+                                                                                <label>
+                                                                                    <input type="radio" name="radio" onclick="showTesdaTextbox();" /><i class="helper"></i>TESDA
+                                                                                </label>
+                                                                                <div id="tesdaTextboxGroup" class="form-group" style="display: none;">
+                                                                                    <label for="tesdaTextbox" class="block form-control-label">Specify TESDA</label>
+                                                                                    <input id="tesdaTextbox" type="text" class="form-control" placeholder="">
+                                                                                </div>
+                                                                                <br>
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                        <div style="width: 130px; height: 120px; border: 1px solid black; display: flex; align-items: center; justify-content: center; margin-right: 20px;">
-                                                            <input type="file" id="photo1x1" accept="image/*" style="display: none;">
-                                                            <label for="photo1x1" style="cursor: pointer;">1x1 Photo</label> <!-- 1x1 photo box -->
+                                                        <div>
+                                                            <div class="col-md-4">
+                                                                <div class="form-group m-r-10">
+                                                                    <label for="inline3mail" class="block form-control-label">Other source of livelihood</label>
+                                                                    <div class="col-md-3">
+                                                                        <form>
+                                                                            <div class="form-radio">
+                                                                                <div class="radio radio-inline">
+                                                                                    <br>
+                                                                                    <label>
+                                                                                        <input type="radio" name="radio" /><i class="helper"></i>Salary
+                                                                                    </label>
+                                                                                    <br>
+                                                                                    <label>
+                                                                                        <input type="radio" name="radio" /><i class="helper"></i>Farming
+                                                                                    </label>
+                                                                                    <br>
+                                                                                    <label>
+                                                                                        <input type="radio" name="radio" /><i class="helper"></i>Business
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </form>
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <form>
+                                                                            <div class="form-radio">
+                                                                                <div class="radio radio-inline" style="margin-left: 60px;">
+                                                                                    <br>
+                                                                                    <label>
+                                                                                        <input type="radio" name="radio" /><i class="helper"></i>Other
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </form>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
                                                         </div>
                                                     </div>
-
-                                                    <script>
-                                                        // Add JavaScript code here to handle file uploads
-                                                        document.querySelector('.signature-line').addEventListener('click', function() {
-                                                            document.getElementById('signatureFile').click();
-                                                        });
-
-                                                        document.getElementById('signatureFile').addEventListener('change', function() {
-                                                            const file = this.files[0];
-                                                            if (file) {
-                                                                // Handle the uploaded signature file
-                                                                console.log('Uploaded signature file:', file);
-                                                            }
-                                                        });
-
-                                                        document.getElementById('photo1x1').addEventListener('change', function() {
-                                                            const file = this.files[0];
-                                                            if (file) {
-                                                                // Handle the uploaded 1x1 photo file
-                                                                console.log('Uploaded 1x1 photo file:', file);
-                                                            }
-                                                        });
-                                                    </script>
-
+                                                    <div class="text-right">
+                                                        <a href="../../BFAR_FARMC/FARMC_MembersProfile_Form/FARMC_Membership.php" class="btn btn-primary">Next<i class="icon-arrow-right"></i></a>
+                                                    </div>
                                                 </div>
+
                                             </div>
-
-
-
-
-
-
-                                            <!-- <div class="text-right">
-                                                        <a href="../../BFAR_FARMC/FARMC_MembersProfile_Form/" class="btn btn-primary">Next<i class="icon-arrow-right"></i></a>
-                                                    </div> -->
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
 
 
-                <!-- Required Jqurey -->
-                <script src="./../assets/plugins/jquery/dist/jquery.min.js"></script>
-                <script src="./../assets/plugins/jquery-ui/jquery-ui.min.js"></script>
-                <script src="./../assets/plugins/tether/dist/js/tether.min.js"></script>
+                        <!-- Required Jqurey -->
+                        <script src="./../assets/plugins/jquery/dist/jquery.min.js"></script>
+                        <script src="./../assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+                        <script src="./../assets/plugins/tether/dist/js/tether.min.js"></script>
 
-                <!-- Required Fremwork -->
-                <script src="./../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+                        <!-- Required Fremwork -->
+                        <script src="./../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 
-                <!-- waves effects.js -->
-                <script src="./../assets/plugins/Waves/waves.min.js"></script>
+                        <!-- waves effects.js -->
+                        <script src="./../assets/plugins/Waves/waves.min.js"></script>
 
-                <!-- Scrollbar JS-->
-                <script src="./../assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
-                <script src="./../assets/plugins/jquery.nicescroll/jquery.nicescroll.min.js"></script>
+                        <!-- Scrollbar JS-->
+                        <script src="./../assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+                        <script src="./../assets/plugins/jquery.nicescroll/jquery.nicescroll.min.js"></script>
 
-                <!--classic JS-->
-                <script src="./../assets/plugins/classie/classie.js"></script>
+                        <!--classic JS-->
+                        <script src="./../assets/plugins/classie/classie.js"></script>
 
-                <!-- notification -->
-                <script src="./../assets/plugins/notification/js/bootstrap-growl.min.js"></script>
+                        <!-- notification -->
+                        <script src="./../assets/plugins/notification/js/bootstrap-growl.min.js"></script>
 
-                <!-- Date picker.js -->
-                <script src="./../assets/plugins/datepicker/js/moment-with-locales.min.js"></script>
-                <script src="./../assets/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+                        <!-- Date picker.js -->
+                        <script src="./../assets/plugins/datepicker/js/moment-with-locales.min.js"></script>
+                        <script src="./../assets/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
 
-                <!-- Select 2 js -->
-                <script src="./../assets/plugins/select2/dist/js/select2.full.min.js"></script>
+                        <!-- Select 2 js -->
+                        <script src="./../assets/plugins/select2/dist/js/select2.full.min.js"></script>
 
-                <!-- Max-Length js -->
-                <script src="./../assets/plugins/bootstrap-maxlength/src/bootstrap-maxlength.js"></script>
+                        <!-- Max-Length js -->
+                        <script src="./../assets/plugins/bootstrap-maxlength/src/bootstrap-maxlength.js"></script>
 
-                <!-- Multi Select js -->
-                <script src="./../assets/plugins/bootstrap-multiselect/dist/js/bootstrap-multiselect.js"></script>
-                <script src="./../assets/plugins/multiselect/js/jquery.multi-select.js"></script>
-                <script type="text/javascript" src="./../assets/plugins/multi-select/js/jquery.quicksearch.js"></script>
+                        <!-- Multi Select js -->
+                        <script src="./../assets/plugins/bootstrap-multiselect/dist/js/bootstrap-multiselect.js"></script>
+                        <script src="./../assets/plugins/multiselect/js/jquery.multi-select.js"></script>
+                        <script type="text/javascript" src="./../assets/plugins/multi-select/js/jquery.quicksearch.js"></script>
 
-                <!-- Tags js -->
-                <script src="./../assets/plugins/bootstrap-tagsinput/dist/bootstrap-tagsinput.js"></script>
+                        <!-- Tags js -->
+                        <script src="./../assets/plugins/bootstrap-tagsinput/dist/bootstrap-tagsinput.js"></script>
 
-                <!-- Bootstrap Datepicker js -->
-                <script type="text/javascript" src="./../assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
-                <script src="./../assets/plugins/bootstrap-datepicker/js/bootstrap-datetimepicker.min.js"></script>
+                        <!-- Bootstrap Datepicker js -->
+                        <script type="text/javascript" src="./../assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+                        <script src="./../assets/plugins/bootstrap-datepicker/js/bootstrap-datetimepicker.min.js"></script>
 
-                <!-- bootstrap range picker -->
-                <script type="text/javascript" src="./../assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+                        <!-- bootstrap range picker -->
+                        <script type="text/javascript" src="./../assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
 
-                <!-- color picker -->
-                <script type="text/javascript" src="./../assets/plugins/spectrum/spectrum.js"></script>
-                <script type="text/javascript" src="./../assets/plugins/jscolor/jscolor.js"></script>
+                        <!-- color picker -->
+                        <script type="text/javascript" src="./../assets/plugins/spectrum/spectrum.js"></script>
+                        <script type="text/javascript" src="./../assets/plugins/jscolor/jscolor.js"></script>
 
-                <!-- highlite js -->
-                <script type="text/javascript" src="./../assets/plugins/syntaxhighlighter/scripts/shCore.js"></script>
-                <script type="text/javascript" src="./../assets/plugins/syntaxhighlighter/scripts/shBrushJScript.js"></script>
-                <script type="text/javascript" src="./../assets/plugins/syntaxhighlighter/scripts/shBrushXml.js"></script>
-                <script type="text/javascript">
-                    SyntaxHighlighter.all();
-                </script>
+                        <!-- highlite js -->
+                        <script type="text/javascript" src="./../assets/plugins/syntaxhighlighter/scripts/shCore.js"></script>
+                        <script type="text/javascript" src="./../assets/plugins/syntaxhighlighter/scripts/shBrushJScript.js"></script>
+                        <script type="text/javascript" src="./../assets/plugins/syntaxhighlighter/scripts/shBrushXml.js"></script>
+                        <script type="text/javascript">
+                            SyntaxHighlighter.all();
+                        </script>
 
-                <!-- custom js -->
-                <script type="text/javascript" src="./../assets/js/main.min.js"></script>
-                <script type="text/javascript" src="./../assets/pages/advance-form.js"></script>
-                <script src="assets/js/menu.min.js"></script>
-                <script type="text/javascript">
-                    SyntaxHighlighter.all();
-                </script>
+                        <!-- custom js -->
+                        <script type="text/javascript" src="./../assets/js/main.min.js"></script>
+                        <script type="text/javascript" src="./../assets/pages/advance-form.js"></script>
+                        <script src="assets/js/menu.min.js"></script>
+                        <script type="text/javascript">
+                            SyntaxHighlighter.all();
+                        </script>
 
-                <script>
-                    document.querySelectorAll('input[name="culturalCommunity"]').forEach(function(radio) {
-                        radio.addEventListener('change', function() {
-                            if (this.value === 'yes') {
-                                document.getElementById('culturalCommunityDetails').style.display = 'block';
-                            } else {
-                                document.getElementById('culturalCommunityDetails').style.display = 'none';
+                        <script>
+                            document.querySelectorAll('input[name="culturalCommunity"]').forEach(function(radio) {
+                                radio.addEventListener('change', function() {
+                                    if (this.value === 'yes') {
+                                        document.getElementById('culturalCommunityDetails').style.display = 'block';
+                                    } else {
+                                        document.getElementById('culturalCommunityDetails').style.display = 'none';
+                                    }
+                                });
+                            });
+                        </script>
+
+                        <script>
+                            document.querySelectorAll('input[name="Disability"]').forEach(function(radio) {
+                                radio.addEventListener('change', function() {
+                                    if (this.value === 'yes') {
+                                        document.getElementById('DisabilityDetails').style.display = 'block';
+                                    } else {
+                                        document.getElementById('DisabilityDetails').style.display = 'none';
+                                    }
+                                });
+                            });
+                        </script>
+
+
+                        <script>
+                            function toggleTextBox(radioId) {
+                                var textBoxGroup = document.getElementById('textBoxGroup');
+                                if (radioId === 'christianRadio') {
+                                    textBoxGroup.style.display = 'block';
+                                } else {
+                                    textBoxGroup.style.display = 'none';
+                                }
                             }
-                        });
-                    });
-                </script>
+                        </script>
 
+                        <script>
+                            function showTertiaryTextbox() {
+                                document.getElementById('tertiaryTextboxGroup').style.display = 'block';
+                                document.getElementById('tesdaTextboxGroup').style.display = 'none';
+                            }
 
-                <script>
-                    function toggleTextBox(radioId) {
-                        var textBoxGroup = document.getElementById('textBoxGroup');
-                        if (radioId === 'christianRadio') {
-                            textBoxGroup.style.display = 'block';
-                        } else {
-                            textBoxGroup.style.display = 'none';
-                        }
-                    }
-                </script>
-
-                <script>
-                    function showTertiaryTextbox() {
-                        document.getElementById('tertiaryTextboxGroup').style.display = 'block';
-                        document.getElementById('tesdaTextboxGroup').style.display = 'none';
-                    }
-
-                    function showTesdaTextbox() {
-                        document.getElementById('tesdaTextboxGroup').style.display = 'block';
-                        document.getElementById('tertiaryTextboxGroup').style.display = 'none';
-                    }
-                </script>
+                            function showTesdaTextbox() {
+                                document.getElementById('tesdaTextboxGroup').style.display = 'block';
+                                document.getElementById('tertiaryTextboxGroup').style.display = 'none';
+                            }
+                        </script>
 
 
     </body>

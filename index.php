@@ -173,8 +173,8 @@
                     <li class="nav-level">--- FARMC Org</li>
                     <li class="treeview"><a class="waves-effect waves-dark" href="#!"><i class="icon-briefcase"></i><span>Fisherfolk Organization </span><i class="icon-arrow-down"></i></a>
                         <ul class="treeview-menu">
-                            <li><a class="waves-effect waves-dark" href="accordion.html"><i class="icon-arrow-right"></i>2.1 Municipal</a></li>
-                            <li><a class="waves-effect waves-dark" href="button.html"><i class="icon-arrow-right"></i>2.2 Fishworker</a></li>
+                            <li><a class="waves-effect waves-dark" href="../BFAR_FARMC/Fisherfolk_Organization/Municipal.php"><i class="icon-arrow-right"></i>2.1 Municipal</a></li>
+                            <li><a class="waves-effect waves-dark" href="Municipal.php"><i class="icon-arrow-right"></i>2.2 Fishworker</a></li>
                             <li><a class="waves-effect waves-dark" href="label-badge.html"><i class="icon-arrow-right"></i>2.3 Commercial</a></li>
                             <li><a class="waves-effect waves-dark" href="label-badge.html"><i class="icon-arrow-right"></i>2.4 Women Fisherfolk</a></li>
                             <li><a class="waves-effect waves-dark" href="label-badge.html"><i class="icon-arrow-right"></i>2.5 Youth Fisherfolk</a></li>
@@ -480,7 +480,7 @@
                             <div class="card-header">
                                 <h5 class="card-header-text">Bar chart</h5>
                             </div>
-                            
+
 
                         </div>
                     </div>
@@ -542,33 +542,33 @@
         });
     </script>
     <script>
-                                const xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
-                                const yValues = [55, 49, 44, 24, 15];
-                                const barColors = [
-                                    "#b91d47",
-                                    "#00aba9",
-                                    "#2b5797",
-                                    "#e8c3b9",
-                                    "#1e7145"
-                                ];
+        const xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+        const yValues = [55, 49, 44, 24, 15];
+        const barColors = [
+            "#b91d47",
+            "#00aba9",
+            "#2b5797",
+            "#e8c3b9",
+            "#1e7145"
+        ];
 
-                                new Chart("myChart", {
-                                    type: "doughnut",
-                                    data: {
-                                        labels: xValues,
-                                        datasets: [{
-                                            backgroundColor: barColors,
-                                            data: yValues
-                                        }]
-                                    },
-                                    options: {
-                                        title: {
-                                            display: true,
-                                            text: "World Wide Wine Production 2018"
-                                        }
-                                    }
-                                });
-                            </script>
+        new Chart("myChart", {
+            type: "doughnut",
+            data: {
+                labels: xValues,
+                datasets: [{
+                    backgroundColor: barColors,
+                    data: yValues
+                }]
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: "World Wide Wine Production 2018"
+                }
+            }
+        });
+    </script>
 
 </body>
 
