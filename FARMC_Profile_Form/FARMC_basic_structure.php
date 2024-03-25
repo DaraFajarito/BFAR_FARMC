@@ -219,7 +219,11 @@
                         <li class="nav-level">--- FARMC Org</li>
                         <li class="treeview"><a class="waves-effect waves-dark" href="../BFAR_FARMC/Fisherfolk_Org/Municipal.php"><i class="icon-briefcase"></i><span>Fisherfolk Organization </span><i class="icon-arrow-down"></i></a>
                             <ul class="treeview-menu">
+<<<<<<< HEAD
                                 <li><a class="waves-effect waves-dark" href="Munucipal.php"><i class="icon-arrow-right"></i>2.1 Municipal</a></li>
+=======
+                                <li><a class="waves-effect waves-dark" href="Municipal.php"><i class="icon-arrow-right"></i>2.1 Municipal</a></li>
+>>>>>>> 1dd3144cdfb82b2b616f2655675db48d2dfcf225
                                 <li><a class="waves-effect waves-dark" href="button.html"><i class="icon-arrow-right"></i>2.2 Fishworker</a></li>
                                 <li><a class="waves-effect waves-dark" href="label-badge.html"><i class="icon-arrow-right"></i>2.3 Commercial</a></li>
                                 <li><a class="waves-effect waves-dark" href="label-badge.html"><i class="icon-arrow-right"></i>2.4 Women Fisherfolk</a></li>
