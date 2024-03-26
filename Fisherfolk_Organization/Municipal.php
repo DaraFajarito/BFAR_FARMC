@@ -122,6 +122,51 @@
         }
     </style>
 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            /* White background */
+        }
+
+        table {
+            border-collapse: collapse;
+            width: calc(300% - 10px);
+            /* Adjusted width */
+            margin: 20px auto;
+            /* Centered horizontally */
+        }
+
+        th,
+        td {
+            border: none;
+            /* Remove borders */
+            padding: 0;
+        }
+
+        th {
+            background-color: #f0f0f0;
+            /* Light gray background for headers */
+            padding: 8px;
+        }
+
+        .form-group {
+            margin-right: 10px;
+        }
+
+        input[type="text"] {
+            width: calc(105% - 10px);
+            /* Adjusted width for text inputs */
+            box-sizing: border-box;
+            padding: 6px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            margin-top: 10px;
+        }
+    </style>
+
 
 
 </head>
@@ -644,29 +689,6 @@
                                                             </tr>
                                                         </tbody>
                                                     </table>
-                                                    <!-- <table id="dynamic-table">
-                                                        <thead>
-                                                            <tr>
-                                                                <th>Position</th>
-                                                                <th>Name</th>
-                                                                <th>Civil Status</th>
-                                                                <th>Gender</th>
-                                                                <th>Birthday</th>
-                                                                <th>4ps/Ips/SC/PWD</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td><input id="position" type="text" class="form-control" placeholder="Position"></td>
-                                                                <td><input id="name" type="text" class="form-control" placeholder="Name"></td>
-                                                                <td><input type="text" class="form-control" placeholder="Civil Status"></td>
-                                                                <td><input type="text" class="form-control" placeholder="Gender"></td>
-                                                                <td><input type="text" class="form-control" placeholder="Birthday"></td>
-                                                                <td><input type="text" class="form-control" placeholder="4ps/Ips/SC/PWD"></td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                    <button onclick="addRow()">Add Row</button> -->
                                                 </div>
 
                                             </div>
@@ -677,10 +699,10 @@
                                             <div class="col-md-4">
                                                 <div class="form-group m-r-15">
                                                     <!-- <hr> -->
-                                                    <label for="inline3mail" class="block form-control-label"></em></label>
+                                                    <label for="inline3mail" class="block form-control-label"></label>
                                                     <label style="font-size: small;">4.2 Board of Directors/Trustees</label>
 
-                                                    <table id="dynamic-table">
+                                                    <table id="table">
                                                         <thead>
                                                             <tr>
                                                                 <th>Name</th>
@@ -698,60 +720,13 @@
                                                                 <td><input type="text" class="form-control" placeholder="Birthday"></td>
                                                                 <td><input type="text" class="form-control" placeholder="4ps/Ips/SC/PWD"></td>
                                                             </tr>
-                                                            <tr>
-                                                                <td><input id="name" type="text" class="form-control" style="width: 200px;" placeholder="Name"></td>
-                                                                <td><input type="text" class="form-control" placeholder="Civil Status"></td>
-                                                                <td><input type="text" class="form-control" placeholder="Gender"></td>
-                                                                <td><input type="text" class="form-control" placeholder="Birthday"></td>
-                                                                <td><input type="text" class="form-control" placeholder="4ps/Ips/SC/PWD"></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td><input id="name" type="text" class="form-control" style="width: 200px;" placeholder="Name"></td>
-                                                                <td><input type="text" class="form-control" placeholder="Civil Status"></td>
-                                                                <td><input type="text" class="form-control" placeholder="Gender"></td>
-                                                                <td><input type="text" class="form-control" placeholder="Birthday"></td>
-                                                                <td><input type="text" class="form-control" placeholder="4ps/Ips/SC/PWD"></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td><input id="name" type="text" class="form-control" style="width: 200px;" placeholder="Name"></td>
-                                                                <td><input type="text" class="form-control" placeholder="Civil Status"></td>
-                                                                <td><input type="text" class="form-control" placeholder="Gender"></td>
-                                                                <td><input type="text" class="form-control" placeholder="Birthday"></td>
-                                                                <td><input type="text" class="form-control" placeholder="4ps/Ips/SC/PWD"></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td><input id="name" type="text" class="form-control" style="width: 200px;" placeholder="Name"></td>
-                                                                <td><input type="text" class="form-control" placeholder="Civil Status"></td>
-                                                                <td><input type="text" class="form-control" placeholder="Gender"></td>
-                                                                <td><input type="text" class="form-control" placeholder="Birthday"></td>
-                                                                <td><input type="text" class="form-control" placeholder="4ps/Ips/SC/PWD"></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td><input id="name" type="text" class="form-control" style="width: 200px;" placeholder="Name"></td>
-                                                                <td><input type="text" class="form-control" placeholder="Civil Status"></td>
-                                                                <td><input type="text" class="form-control" placeholder="Gender"></td>
-                                                                <td><input type="text" class="form-control" placeholder="Birthday"></td>
-                                                                <td><input type="text" class="form-control" placeholder="4ps/Ips/SC/PWD"></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td><input id="name" type="text" class="form-control" style="width: 200px;" placeholder="Name"></td>
-                                                                <td><input type="text" class="form-control" placeholder="Civil Status"></td>
-                                                                <td><input type="text" class="form-control" placeholder="Gender"></td>
-                                                                <td><input type="text" class="form-control" placeholder="Birthday"></td>
-                                                                <td><input type="text" class="form-control" placeholder="4ps/Ips/SC/PWD"></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td><input id="name" type="text" class="form-control" style="width: 200px;" placeholder="Name"></td>
-                                                                <td><input type="text" class="form-control" placeholder="Civil Status"></td>
-                                                                <td><input type="text" class="form-control" placeholder="Gender"></td>
-                                                                <td><input type="text" class="form-control" placeholder="Birthday"></td>
-                                                                <td><input type="text" class="form-control" placeholder="4ps/Ips/SC/PWD"></td>
-                                                            </tr>
                                                         </tbody>
                                                     </table>
+                                                    <button onclick="addRow()">Add Row</button>
                                                 </div>
                                             </div>
                                         </div>
+
                                         <hr>
                                         <div class="row">
                                             <div class="col-md-4">
@@ -981,11 +956,41 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <hr>
+
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group m-r-15">
+                                                    <!-- <hr> -->
+                                                    <label for="inline3mail" class="block form-control-label">List of members</em></label>
+                                                    <!-- <label style="font-size: small;"></label> -->
+
+                                                    <table id="dytable">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Name</th>
+                                                                <th>Civil Status</th>
+                                                                <th>Gender</th>
+                                                                <th>Birthday</th>
+                                                                <th>4ps/Ips/SC/PWD</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><input id="name" type="text" class="form-control" style="width: 200px;" placeholder="Name"></td>
+                                                                <td><input type="text" class="form-control" placeholder="Civil Status"></td>
+                                                                <td><input type="text" class="form-control" placeholder="Gender"></td>
+                                                                <td><input type="text" class="form-control" placeholder="Birthday"></td>
+                                                                <td><input type="text" class="form-control" placeholder="4ps/Ips/SC/PWD"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <button onclick="addRow()">Add Row</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="text-right">
                                             <a href="../../BFAR_FARMC/FARMC_MembersProfile_Form/FARMC_Membership.php" class="btn btn-primary">Next<i class="icon-arrow-right"></i></a>
-
-                                            </div>
->>>>>>> 1dd3144cdfb82b2b616f2655675db48d2dfcf225
                                         </div>
                                     </div>
                                 </div>
@@ -1109,11 +1114,10 @@
                     }
                 </script>
 
-
                 <script>
                     function addRow() {
-                        var table = document.getElementById("dynamic-table");
-                        var row = table.insertRow(-1);
+                        var etable = document.getElementById("table");
+                        var row = etable.insertRow(-1);
                         var firstRow = table.rows[1]; // Get the first row (index 1, excluding the header row)
 
                         // Clone the first row and insert it as a new row
@@ -1121,6 +1125,21 @@
                             var cell = row.insertCell(i);
                             var input = firstRow.cells[i].querySelector('input').cloneNode(true);
                             cell.appendChild(input);
+                        }
+                    }
+                </script>
+
+                <script>
+                    function addRow() {
+                        var ntable = document.getElementById("dytable");
+                        var newRow = ntable.insertRow(-1); // Insert a new row at the last position
+
+                        // Clone and append cells from the first row
+                        var firstRowCells = table.rows[1].cells;
+                        for (var i = 0; i < firstRowCells.length; i++) {
+                            var newCell = newRow.insertCell(i);
+                            var input = firstRowCells[i].querySelector('input').cloneNode(true);
+                            newCell.appendChild(input);
                         }
                     }
                 </script>
