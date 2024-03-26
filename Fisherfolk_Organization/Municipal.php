@@ -118,52 +118,8 @@
         }
 
         button {
-            margin-top: 10px;
-        }
-    </style>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #ffffff;
-            /* White background */
-        }
-
-        table {
-            border-collapse: collapse;
-            width: calc(300% - 10px);
-            /* Adjusted width */
-            margin: 20px auto;
-            /* Centered horizontally */
-        }
-
-        th,
-        td {
-            border: none;
-            /* Remove borders */
-            padding: 0;
-        }
-
-        th {
-            background-color: #f0f0f0;
-            /* Light gray background for headers */
-            padding: 8px;
-        }
-
-        .form-group {
-            margin-right: 10px;
-        }
-
-        input[type="text"] {
-            width: calc(105% - 10px);
-            /* Adjusted width for text inputs */
-            box-sizing: border-box;
-            padding: 6px;
-            margin-bottom: 10px;
-        }
-
-        button {
-            margin-top: 10px;
+            margin-top: -5px;
+            font-size: smaller;
         }
     </style>
 
@@ -1109,21 +1065,6 @@
                         document.getElementById('tertiaryTextboxGroup').style.display = 'none';
                     }
                 </script>
-
-                <!-- <script>
-                    function addRow() {
-                        var ntable = document.getElementById("table");
-                        var newRow = ntable.insertRow(-1); // Insert a new row at the last position
-
-                        // Clone and append cells from the first row
-                        var firstRowCells = table.rows[1].cells;
-                        for (var i = 0; i < firstRowCells.length; i++) {
-                            var newCell = newRow.insertCell(i);
-                            var input = firstRowCells[i].querySelector('input').cloneNode(true);
-                            newCell.appendChild(input);
-                        }
-                    }
-                </script> -->
 
                 <script>
                     function addRow(dytable) {
