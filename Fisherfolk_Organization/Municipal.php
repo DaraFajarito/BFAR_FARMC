@@ -167,8 +167,6 @@
         }
     </style>
 
-
-
 </head>
 
 <body>
@@ -698,11 +696,9 @@
                                         <div class="row">
                                             <div class="col-md-4">
                                                 <div class="form-group m-r-15">
-                                                    <!-- <hr> -->
                                                     <label for="inline3mail" class="block form-control-label"></label>
                                                     <label style="font-size: small;">4.2 Board of Directors/Trustees</label>
-
-                                                    <table id="table">
+                                                    <table id="dytable">
                                                         <thead>
                                                             <tr>
                                                                 <th>Name</th>
@@ -712,7 +708,7 @@
                                                                 <th>4ps/Ips/SC/PWD</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody>
+                                                        <tbody id="dytable-body">
                                                             <tr>
                                                                 <td><input id="name" type="text" class="form-control" style="width: 200px;" placeholder="Name"></td>
                                                                 <td><input type="text" class="form-control" placeholder="Civil Status"></td>
@@ -722,7 +718,7 @@
                                                             </tr>
                                                         </tbody>
                                                     </table>
-                                                    <button onclick="addRow()">Add Row</button>
+                                                    <button onclick="addRow('dytable')">Add Row</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -965,7 +961,7 @@
                                                     <label for="inline3mail" class="block form-control-label">List of members</em></label>
                                                     <!-- <label style="font-size: small;"></label> -->
 
-                                                    <table id="dytable">
+                                                    <table id="dynamic">
                                                         <thead>
                                                             <tr>
                                                                 <th>Name</th>
@@ -975,7 +971,7 @@
                                                                 <th>4ps/Ips/SC/PWD</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody>
+                                                        <tbody id="dy-table">
                                                             <tr>
                                                                 <td><input id="name" type="text" class="form-control" style="width: 200px;" placeholder="Name"></td>
                                                                 <td><input type="text" class="form-control" placeholder="Civil Status"></td>
@@ -985,7 +981,7 @@
                                                             </tr>
                                                         </tbody>
                                                     </table>
-                                                    <button onclick="addRow()">Add Row</button>
+                                                    <button onclick="addRow('dynamic')">Add Row</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -1114,24 +1110,9 @@
                     }
                 </script>
 
-                <script>
+                <!-- <script>
                     function addRow() {
-                        var etable = document.getElementById("table");
-                        var row = etable.insertRow(-1);
-                        var firstRow = table.rows[1]; // Get the first row (index 1, excluding the header row)
-
-                        // Clone the first row and insert it as a new row
-                        for (var i = 0; i < firstRow.cells.length; i++) {
-                            var cell = row.insertCell(i);
-                            var input = firstRow.cells[i].querySelector('input').cloneNode(true);
-                            cell.appendChild(input);
-                        }
-                    }
-                </script>
-
-                <script>
-                    function addRow() {
-                        var ntable = document.getElementById("dytable");
+                        var ntable = document.getElementById("table");
                         var newRow = ntable.insertRow(-1); // Insert a new row at the last position
 
                         // Clone and append cells from the first row
@@ -1141,6 +1122,24 @@
                             var input = firstRowCells[i].querySelector('input').cloneNode(true);
                             newCell.appendChild(input);
                         }
+                    }
+                </script> -->
+
+                <script>
+                    function addRow(dytable) {
+                        var table = document.getElementById(dytable);
+                        var tableBody = table.querySelector('tbody');
+                        var firstRow = tableBody.firstElementChild.cloneNode(true);
+                        tableBody.appendChild(firstRow);
+                    }
+                </script>
+
+                <script>
+                    function addRow(dynamic) {
+                        var table = document.getElementById(dynamic);
+                        var tableBody = table.querySelector('tbody');
+                        var firstRow = tableBody.firstElementChild.cloneNode(true);
+                        tableBody.appendChild(firstRow);
                     }
                 </script>
 
